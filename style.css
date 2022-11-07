@@ -1,12 +1,98 @@
 body {
   font-family: Calibri, serif;
+  color:#FEFEF6;
+}
+
+input, label, select, textarea {
+  display:block;
+  color: black;
+}
+input[type=checkbox], input [type=radio] {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label.block {
+  display: block;
+}
+
+.flex-selection {
+  display:flex; 
+  justify-content:start; 
+  gap:15px; 
+  flex-wrap:wrap;
 }
 
 h1 {
-  text-align: center;
-  border-width: thick;
   padding: 10px 20px 10px 0px;
+  font-color: white;
+  font-weight: 100;
+  text-align: center;
+  padding: 10px;
 }
+
+h2 {
+  padding: 10px 20px 10px 0px;
+  color: black;
+}
+
+article h3 {
+  text-align: center;
+}
+
+header {
+  width: 100;
+  background-color:#7F8892;
+}
+
+.listItem {
+  color: white;
+}
+
+p {
+  color: black;
+}
+
+.article1 {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 30%;
+  padding: 0px 5px 5px 5px;
+  margin: 0px 10px 0px 0px;
+  background-color: #D0D0D1;
+  border-radius: 15px; 
+}
+.article2 {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 30%;
+  padding: 0px 5px 5px 5px;
+  margin: 0px 10px 0px 0px;
+  background-color: #D0D0D1;
+  border-radius: 15px;
+}
+.article3 {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 30%;
+  padding: 0px 5px 5px 5px;
+  background-color: #D0D0D1;
+  border-radius: 15px;
+}
+
+article img {
+  border-radius: 15px;
+  width: 100%;
+  height: 700px;
+  margin: 5px 0px 0px 0px; 
+} 
 
 .nav {
   list-style-type: none;
@@ -34,12 +120,6 @@ h1 {
   color: slategray;
   font-size: 
 }
-
-.title{
-  text-align: right;
-}
-
-
 
 .padding10px {
   padding-left: 10px;
@@ -72,6 +152,7 @@ figure {
 
 .footer {
   text-align: bottom;
+  color: black;
 }
 
 .feedback{
@@ -80,6 +161,7 @@ figure {
 }
 
 .centeritems {
+  display: flex;
   text-align: center;
 }
 
@@ -98,6 +180,7 @@ figure {
   flex-shrink: 0;
   flex-basis: 200px;
   padding: 15px;
+  color: black;
   
 }
 
@@ -166,4 +249,8 @@ button {
 
 .big {
   font-size: 5.5vw;
+}
+
+#reviewbox {
+  margin: auto;
 }

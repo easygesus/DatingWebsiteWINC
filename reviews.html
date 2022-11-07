@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>reviews</title>
-  <link href="style.css" rel="stylesheet"> 
+  <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
   <header>
-  <h1 class="big title"><em>EasyDate</em></h1>
-  <nav class="nav">
-  <ul>
-    <li><a href="index.html" style="color: 
-    white">Home</a></li>
-    <li><a href="reviews.html" style="color: 
-    white">Reviews</a></li>
-    <li><a href="sign_up.html" style="color: 
-    white">Sign up</a></li>
-    <li><a href="people.html" style="color: 
-    white">People</a></li>
-  </ul>
-</nav>
-</header>
+    <h1 class="big"><em>EasyDate</em></h1>
+    <nav class="nav">
+      <ul>
+        <li><a class="listItem" href="index.html">Home</a></li>
+        <li><a class="listItem" href="reviews.html">Reviews</a></li>
+        <li><a class="listItem" href="sign_up.html">Sign up</a></li>
+        <li><a class="listItem" href="people.html">People</a></li>
+      </ul>
+    </nav>
+  </header>
   <h2 style="text-align: center;"><strong>Reviews</strong></h2>
   <br>
   <main>
-  <div class="review-container">
-    <div class="review1 card">
-      <figure  class="imageZoom">
+    <div class="review-container">
+      <div class="review1 card">
+        <figure class="imageZoom">
           <img src="images/laughing_guy.jpg" class="picture_review">
-        <figcaption>
-          <label>Damascus</label>
-        </figcaption>
-      </figure >
-      <p><em>This is such an amazing datingsite! At my first try I scored big!         Let's 
-      see what 
-      this journey brings!</em></p>
-    </div>
-    <div class="review2 card">
-      <figure class="imageZoom">
-        <img src= "images/dark_smooth_boy.jpg" class="picture_review">
+          <figcaption>
+            <label>Damascus</label>
+          </figcaption>
+        </figure>
+        <p><em>This is such an amazing datingsite! At my first try I scored big! Let's
+            see what
+            this journey brings!</em></p>
+      </div>
+      <div class="review2 card">
+        <figure class="imageZoom">
+          <img src="images/dark_smooth_boy.jpg" class="picture_review">
           <figcaption>
             <label>Dimitri</label>
           </figcaption>
-      </figure>
-        <p><em>I wasn't excited at first. After using this for 4 months                  I had         no match at all. But then there was one match and that                     was instant         love. I'm happy I did this!</em></p>
-    </div>
-    <div class="review3 card">
-      <figure class="imageZoom">
-        <img src= "images/hat_girl.jpg" class="picture_review">
+        </figure>
+        <p><em>I wasn't excited at first. After using this for 4 months I had no match at all. But then there was one
+            match and that was instant love. I'm happy I did this!</em></p>
+      </div>
+      <div class="review3 card">
+        <figure class="imageZoom">
+          <img src="images/hat_girl.jpg" class="picture_review">
           <figcaption>
             <label>Emma</label>
           </figcaption>
-      </figure>
-        <p><em>My experiences with this website is not what I expected.                  This           is not in a good way though.. I've had some really good                                         conversations with people but before we even got to a real date, they            cut           the convo off. Really dissappointing. </em></p></div>
-    <div class="review4 card">
-       <figure class="imageZoom">
-        <img src= "images/rood_is_niet_lelijk.jpg" class="picture_review">
+        </figure>
+        <p><em>My experiences with this website is not what I expected. This is not in a good way though.. I've had some
+            really good conversations with people but before we even got to a real date, they cut the convo off. Really
+            dissappointing. </em></p>
+      </div>
+      <div class="review4 card">
+        <figure class="imageZoom">
+          <img src="images/rood_is_niet_lelijk.jpg" class="picture_review">
           <figcaption>
             <label>Isa</label>
           </figcaption>
-       </figure><p><em>Natuurlijk kan ik alleen maar voor mezelf spreken, maar deze                   datingssite is beter dan al die andere slappe sites waar je nooit een match krijgt of          waar je moet betalen om een profiel te zien. Ik raad iedereen deze site aan die een            date wilt scoren!</em></p></div>
+        </figure>
+        <p><em>Natuurlijk kan ik alleen maar voor mezelf spreken, maar deze datingssite is beter dan al die andere
+            slappe sites waar je nooit een match krijgt of waar je moet betalen om een profiel te zien. Ik raad iedereen
+            deze site aan die een date wilt scoren!</em></p>
+      </div>
     </div>
-  <div class="centeritems">
-    <textarea id="reviewBox"  name="reviews" cols="30" rows="12" placeholder="please share your 
+    <div class="centeritems" style="margin:15px;">
+      <textarea style="display:block;margin:auto;" id="reviewBox" name="reviews" cols="30" rows="12" placeholder="please share your 
     review here!..."></textarea>
-     <br><br>
-     <button onclick="submitFeedback()" type="submit">submit</button>
-  </div>
+    </div>
+    <button onclick="submitFeedback()" type="submit" style="display:block;margin:auto;">submit</button>
   </main>
   <footer class="footer">
     <span>
@@ -74,4 +79,5 @@
   </footer>
   <script src="script.js"></script>
 </body>
+
 </html>

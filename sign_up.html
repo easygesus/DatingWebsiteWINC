@@ -1,62 +1,122 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>register</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
   <header>
-  <h1 class="big title"><em>EasyDate</em></h1>
-  <nav class="nav">
-  <ul>
-    <li><a href="index.html" style="color: 
-    white">Home</a></li>
-    <li><a href="reviews.html" style="color: 
-    white">Reviews</a></li>
-    <li><a href="sign_up.html" style="color: 
-    white">Sign up</a></li>
-    <li><a href="people.html" style="color: 
-    white">People</a></li>
-  </ul>
-</nav>
-</header>
+    <h1 class="big"><em>EasyDate</em></h1>
+    <nav class="nav">
+      <ul>
+        <li><a class="listItem" href="index.html">Home</a></li>
+        <li><a class="listItem" href="reviews.html">Reviews</a></li>
+        <li><a class="listItem" href="sign_up.html">Sign up</a></li>
+        <li><a class="listItem" href="people.html">People</a></li>
+      </ul>
+    </nav>
+  </header>
   <h2>Register</h2>
   <main>
     <form>
-      <p>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="surname" placeholder="surname + lastname"><br>
-      </p>
-    <label for="name">Username:</label><br>
-    <input type="text" id="name" name="surname" 
-    placeholder="e.g. dark knight etc.."><br><br>
+      <div class="form-container">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="surname" placeholder="surname + lastname">
+        </div>
 
-    <label for="description">Tell us about yourself: </label><br>
-    <textarea id="description" name="description" placeholder="write here..." maxlength="500"
-      rows="7"></textarea><br><br>
-      
-      <label for="age">Age:</label><br>
-    <input type="text" id="age" name="years"><br><br>
+        <div>
+          <label for="name">Username:</label>
+          <input type="text" id="name" name="surname" placeholder="e.g. dark knight etc..">
+        </div>
 
-    <label>Sex:</label><br>
+        <div>
+          <label for="description">Tell us about yourself: </label>
+          <textarea id="description" name="description" placeholder="write here..." maxlength="500" rows="7"></textarea>
+        </div>
 
-    <input type="checkbox" id="male" name="man">
-    <label for="male">Male</label>
+        <div>
+          <label for="city">Choose a city:</label>
+          <select name="city" id="city">
+            <option value=" ">---</option>
+            <option value="lelystad">Lelystad</option>
+            <option value="assen">Assen</option>
+            <option value="middelburg">Middelburg</option>
+            <option value="zwolle">Zwolle</option>
+            <option value="leeuwarden">Leeuwarden</option>
+            <option value="arnhem">Arnhem</option>
+            <option value="denBosch">Den Bosch</option>
+            <option value="maastricht">Maastricht</option>
+            <option value="groningen">Groningen</option>
+            <option value="utrecht">Utrecht</option>
+            <option value="haarlem">Haarlem</option>
+            <option value="denHaag">Den Haag</option>
+          </select>
+        </div>
 
-    <input type="checkbox" id="female" name="woman">
-    <label for="female">Female</label><br><br>
+        <div>
+          <label for="age">Age:</label>
+          <input type="text" id="age" name="years">
+        </div>
 
-    <label for="phone_number">Phone</label><br>
-    <input type="tel" placeholder="+316" id="phone_number" name="cellphone" maxlength="8"><br><br>
+        <div>
+          <label>Sex:</label>
+          <div class="flex-selection">
+            <div>
+              <input type="checkbox" id="male" name="man">
+              <label for="male">Male</label>
+            </div>
 
-    <label for="email_address">Email</label><br>
-    <input type="email" id="email_address" name="email" placeholder="example@gmail.com"><br>
+            <div>
+              <input type="checkbox" id="female" name="woman">
+              <label for="female">Female</label>
+            </div>
+          </div>
+        </div>
 
-    <label for="password">Password</label><br>
-    <input type="password" id="password" name="psswrd" placeholder="Example19!"><br><br> <br>
+        <div>
+          <label>Sex interest:</label>
+          <div class="flex-selection">
+            <div>
+              <label for="men">men</label>
+              <input type="radio" id="men" name="sexInterest" value="men">
+            </div>
+            <div>
+              <label for="women">women</label>
+              <input type="radio" id="women" name="sexInterest" value="women">
+            </div>
+            <div>
+              <label for="trans">trans</label>
+              <input type="radio" id="trans" name="sexInterest" value="trans">
+            </div>
+            <div>
+              <label for="allOfTheAbove">All of the above</label>
+              <input type="radio" id="allOfTheAbove" name="sexInterest" value="allOfTheAbove">
+            </div>
+          </div>
+        </div>
 
-    <input type="submit" value="submit" name="submit_button"><br>
-  </form>
+
+
+        <div>
+          <label for="phone_number">Phone:</label>
+          <input type="tel" placeholder="+316" id="phone_number" name="cellphone" maxlength="8">
+        </div>
+        <div>
+          <label for="email_address">Email:</label>
+          <input type="email" id="email_address" name="email" placeholder="example@gmail.com">
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="psswrd" placeholder="Example19!">
+        </div>
+        <div>
+          <input type="submit" value="submit" name="submit_button">
+        </div>
+      </div>
+    </form>
   </main>
   <footer class="footer">
     <span>
@@ -64,4 +124,5 @@
     </span>
   </footer>
 </body>
+
 </html>
